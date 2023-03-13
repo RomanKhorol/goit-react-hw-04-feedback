@@ -4,7 +4,7 @@ export const FeeedbackOptions = ({ options, onLeaveFeedback }) => (
   <BtnWrap>
     {options.map(option => {
       return (
-        <Btn type="button" onClick={() => onLeaveFeedback(option)} key={option}>
+        <Btn type="button" name={option} onClick={onLeaveFeedback} key={option}>
           {option}
         </Btn>
       );
